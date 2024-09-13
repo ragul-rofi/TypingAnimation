@@ -1,0 +1,54 @@
+html{
+    min-height: 100%;
+    overflow: hidden;
+}
+body{
+    color: grey;
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgb(20, 20, 20);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+.container{
+    display: inline-block;
+    margin: 20%;
+}
+.text{
+    overflow: hidden;
+    font-size: 3.6rem;
+    font-weight: 500;
+    border-right: 0.15rem solid orange;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(40,end) forwards infinite, blink 0.75s step-end infinite;
+
+}
+
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+/* @keyframes delete{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+.text{
+    animation: typing 4s steps(40,end),blink 0.75s step-end infinite, delete 4s steps(40,end) 4s forwards infinite;
+} */
